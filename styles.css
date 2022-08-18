@@ -38,14 +38,14 @@ body
 
 #ToDo
 {
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 40%;
     float: left;
 }
 
 #Editar
 {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 40%;
     float: right;
     margin-right: 300px;
@@ -54,6 +54,16 @@ body
 #ToDoInner
 {
     background-color: rgba(27, 27, 27, 0.479);
+    margin: 30px;
+    border-radius: 10px;
+    height: 500px;
+    padding: 15px;
+}
+
+#EditInner
+{
+    color: #000;
+    background-color: rgba(180, 180, 180, 0.479);
     margin: 30px;
     border-radius: 10px;
     height: 500px;
