@@ -1,0 +1,77 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:  url("/leone-venter-VieM9BdZKFo-unsplash.jpg");
+    background-size: 1920px 1280px; /*original image size*/
+    background-position: center;
+    margin: 0;
+}
+#top
+{
+    height: 50px;
+    text-align: left;
+    padding-left: 400px;
+    background-color: rgba(193, 170, 105, 0.479);
+    width: 600px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#end
+{
+    height: 50px;
+    text-align: right;
+    padding-right: 400px;
+    background-color: rgba(193, 170, 105, 0.479);
+    width: 600px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float:right;
+}
+
+#cuerpo
+{
+    text-align: center;
+    color: azure;
+    font-size: small;
+}
+
+#ToDo
+{
+    background-color: aqua;
+    width: 40%;
+    float: left;
+}
+
+#Editar
+{
+    background-color: blueviolet;
+    width: 40%;
+    float: right;
+    margin-right: 300px;
+}
+
+#ToDoInner
+{
+    background-color: rgba(27, 27, 27, 0.479);
+    margin: 30px;
+    border-radius: 10px;
+    height: 500px;
+    padding: 15px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px; /*15px 120px   1 vertical 2 horizontal*/
+    width: 350px; /*le doy tamaño fijo a los botones*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgba(59, 59, 59, 0.767);
+    border-radius: 10px;
+    margin: 10px;
+  }
