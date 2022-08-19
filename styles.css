@@ -80,6 +80,7 @@ input
     height: 20px;
     flex: 0 0 200px;
     margin-left: 10px;
+    width: 300px;
 }
 
 label {
@@ -87,10 +88,26 @@ label {
     flex-direction: row;
     justify-content: flex-end;
     text-align: right;
-    width: 400px;
+    width: 185px;
     line-height: 26px;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 3px;
+}
+
+#lbtarea
+{
+    width: 160px;
+}
+
+#submit
+{
+    border-color: #faa307;
+    background-color: transparent;
+    border-radius: 7px;
+    color: #faa307;
+    width: 150px;
+    height: 35px;
+    margin:15px;
+}
 
 .button {
     border: none;
