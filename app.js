@@ -1,14 +1,24 @@
 //tareas por realizar
-const ToDoList = 
-[
-    {tarea:"Compras de supermercado", categoria:"Hogar", hecho:false},
-    {tarea:"Tarea JS DOM", categoria:"Educacion", hecho:true},
-    {tarea:"Sacar al perro", categoria:"Hogar", hecho:false},
-    {tarea:"Enviar correo a Juan", categoria:"Trabajo", hecho:false}
-]
+class tareas
+{
+    constructor(tarea,categoria,hecho)
+    {
+        this.tarea = tarea;
+        this.categoria =categoria;
+        this.hecho = Boolean(hecho);
+    }
+}
+
+const ToDoList = []
+
+ToDoList.push(new tareas("Compras de supermercado","Hogar",false))
+ToDoList.push(new tareas("Tarea JS DOM","Educacion",true))
+ToDoList.push(new tareas("Sacar al perro","Hogar",false))
+ToDoList.push(new tareas("Enviar correo a Juan","Trabajo",false))
+
+window.onload = () => {UpdateGrid(ToDoList);} //para que cargue desde el inicio la tabla
 
 const frmTarea = document.getElementById("frmTarea")
-
 frmTarea.onsubmit = datosForm
 
 function datosForm(e)
@@ -17,13 +27,23 @@ function datosForm(e)
 
     let datos = e.target //capturar los datos del input
     
-    ToDoList.push(datos.children[0].value, datos.children[1].value)
+    // console.log(datos.children[1].value) txt tarea
+    // console.log(datos.children[4].value) txt categoria
+
+    ToDoList.push(new tareas(datos.children[1].value, datos.children[4].value, false))
+
+    UpdateGrid(ToDoList); //recargar la tabla
 }
 
-function UpdateGrid()
+function UpdateGrid(ToDoList)
 {
+    const tableBody = document.getElementById('tableData')
+    let dataHtml = '';
 
+    for(let data of ToDoList)
+    {
+        dataHtml += `<tr><td>${data.tarea}</td><td>${data.categoria}</td><td>${data.hecho}</td></tr>`
+    }
+
+    tableBody.innerHTML = dataHtml;
 }
-
-function ChangeStatus()
-{}

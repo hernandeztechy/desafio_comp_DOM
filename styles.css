@@ -109,6 +109,23 @@ label {
     margin:15px;
 }
 
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th
+{
+    border: 1px solid #faa307;
+    padding: 8px;
+}
+
+th
+{
+    font-weight: bold;
+}
+
 .button {
     border: none;
     color: white;
